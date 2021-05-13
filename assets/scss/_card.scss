@@ -1,15 +1,18 @@
 .card {
     width: 85%;
+    max-width: 400px;
     margin: auto;
     background: hsl(244, 38%, 16%);
     color: #fff;
-    border-radius: .7em;
+    border-radius: .5em;
     overflow: hidden;
+    margin-top: 2em;
+    margin-bottom: 2em;
 
     /* -- -- -- -- -- Image -- -- -- -- --*/
     .card__img-div {
         width: 100%;
-        height: 13em;
+        height: 13rem;
         background: 
             url('../../images/image-header-desktop.jpg')
             center top / 100%
@@ -72,6 +75,51 @@
             font-size: .6em;
             font-weight: 400;
             color: hsla(0, 0%, 100%, 0.6);
+        }
+    }
+}
+
+@include sm-desktop {
+    .card {
+        display: flex; 
+        flex-direction: row-reverse;
+        max-width: 1000px;
+
+        .card__img-div {
+            width: 50%;
+            height: unset;
+        }
+    
+        .card__content {
+            width: 50%;
+            height: 100%;
+            text-align: left;
+            padding: 0 4em 1em 3em;
+        }
+
+        .card__title {
+            margin: 2.5em 0 1em 0;
+            max-width: 400px;
+        }
+    
+        .card__paragraph {
+            margin-bottom: 3.5em;
+            max-width: 400px;
+        }
+
+        .card__stats {
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 350px;
+            margin-bottom: 1.5em;
+        }
+    }
+}
+
+@include desktop {
+    .card {
+        .card__content {
+            padding: 0 9em 1em 4em;
         }
     }
 }

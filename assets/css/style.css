@@ -1,16 +1,19 @@
 .card {
   width: 85%;
+  max-width: 400px;
   margin: auto;
   background: #1b1938;
   color: #fff;
-  border-radius: 0.7em;
+  border-radius: 0.5em;
   overflow: hidden;
+  margin-top: 2em;
+  margin-bottom: 2em;
   /* -- -- -- -- -- Image -- -- -- -- --*/
   /* -- -- -- -- -- Content -- -- -- -- --*/
 }
 .card .card__img-div {
   width: 100%;
-  height: 13em;
+  height: 13rem;
   background: url("../../images/image-header-desktop.jpg") center top/100% no-repeat;
   position: relative;
 }
@@ -61,6 +64,42 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media (min-width: 992px) {
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1000px;
+  }
+  .card .card__img-div {
+    width: 50%;
+    height: unset;
+  }
+  .card .card__content {
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    padding: 0 4em 1em 3em;
+  }
+  .card .card__title {
+    margin: 2.5em 0 1em 0;
+    max-width: 400px;
+  }
+  .card .card__paragraph {
+    margin-bottom: 3.5em;
+    max-width: 400px;
+  }
+  .card .card__stats {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 350px;
+    margin-bottom: 1.5em;
+  }
+}
+@media (min-width: 1200px) {
+  .card .card__content {
+    padding: 0 9em 1em 4em;
+  }
+}
 body {
   width: 100%;
   height: 100vh;
@@ -75,6 +114,11 @@ body {
 .attribution {
   position: fixed;
   bottom: 0;
+  color: #fff;
+  padding: 0.5em 0;
+}
+.attribution a {
+  color: #aa5cdb;
 }
 
 /*# sourceMappingURL=style.css.map */

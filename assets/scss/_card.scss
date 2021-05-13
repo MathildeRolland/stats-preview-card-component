@@ -1,0 +1,77 @@
+.card {
+    width: 85%;
+    margin: auto;
+    background: hsl(244, 38%, 16%);
+    color: #fff;
+    border-radius: .7em;
+    overflow: hidden;
+
+    /* -- -- -- -- -- Image -- -- -- -- --*/
+    .card__img-div {
+        width: 100%;
+        height: 13em;
+        background: 
+            url('../../images/image-header-desktop.jpg')
+            center top / 100%
+            no-repeat;
+        position: relative;
+    }
+
+    .card__img-div::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: hsla(277, 64%, 61%, .4);
+    }
+
+
+    /* -- -- -- -- -- Content -- -- -- -- --*/
+
+    .card__content {
+        padding: .8em 1.5em;
+        text-align: center;
+    }
+
+    .card__title {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin: .7em 0;
+
+        span {
+            color: hsl(277, 64%, 61%);
+        }
+    }
+
+    .card__paragraph {
+        margin-bottom: 1em;
+        color: hsla(0, 0%, 100%, 0.75);
+        font-size: .8em;
+        line-height: 1.5em;
+    }
+
+    .card__stats {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+
+    .card__stat {
+        margin: 1em 0;
+
+        strong {
+            display: inline-block;
+            font-size: 1.2em;
+            margin-bottom: .2em;
+        }
+
+        p {
+            text-transform: uppercase;
+            font-size: .6em;
+            font-weight: 400;
+            color: hsla(0, 0%, 100%, 0.6);
+        }
+    }
+}

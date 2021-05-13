@@ -1,0 +1,80 @@
+.card {
+  width: 85%;
+  margin: auto;
+  background: #1b1938;
+  color: #fff;
+  border-radius: 0.7em;
+  overflow: hidden;
+  /* -- -- -- -- -- Image -- -- -- -- --*/
+  /* -- -- -- -- -- Content -- -- -- -- --*/
+}
+.card .card__img-div {
+  width: 100%;
+  height: 13em;
+  background: url("../../images/image-header-desktop.jpg") center top/100% no-repeat;
+  position: relative;
+}
+.card .card__img-div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(170, 92, 219, 0.4);
+}
+.card .card__content {
+  padding: 0.8em 1.5em;
+  text-align: center;
+}
+.card .card__title {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0.7em 0;
+}
+.card .card__title span {
+  color: #aa5cdb;
+}
+.card .card__paragraph {
+  margin-bottom: 1em;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+.card .card__stats {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lexend Deca", sans-serif;
+}
+.card .card__stat {
+  margin: 1em 0;
+}
+.card .card__stat strong {
+  display: inline-block;
+  font-size: 1.2em;
+  margin-bottom: 0.2em;
+}
+.card .card__stat p {
+  text-transform: uppercase;
+  font-size: 0.6em;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #090b1a;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

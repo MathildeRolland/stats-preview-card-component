@@ -1,0 +1,17 @@
+@import 'card';
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(233, 47%, 7%);
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+}
